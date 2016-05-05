@@ -88,7 +88,7 @@ width="600"
 height="450"
 ```
 14. Change these numbers to the exact width and height of your custom HTML box
-ex. 
+- ex. 
 ```sh
 width="400"
 height="250"
@@ -171,8 +171,101 @@ So it should look something like this
 style="font-family: 'Raleway', sans-serif!important;"
 ```
 4. Then take this new formed piece of code and add it within the p, h1, h2, h3, h4, h5, h6, or span tag. *This one isn't as straight forward, so don't hesitate to call me over for help*
-Ex. 
+- Ex. 
 ```sh
 <p style="font-family: 'Raleway', sans-serif!important;" class="lplh-58">Hello World</p>
 ```
 
+### Animate a CTA to bring more attention to it
+- ex. http://content.reverehealth.com/brandon-hall/
+1. Click on “Javascripts” and then click “Add”. 
+2. Name the file whatever you would like. 
+3. Paste this code into the blank file.
+```sh
+<script>
+  //The page element that will be animated on page load.
+var yourElement = "#lp-code-247";
+  //The effect that will be applied to your page element. See https://daneden.github.io/animate.css/ for full list.
+var yourEffect = "swing";
+var effectClass = "animated " + "swing";
+  $( document ).ready(function() {
+      $('#lp-code-247').show().addClass(effectClass).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+});
+</script>
+```
+4. Save the code and go find the #id of the item you want to animate. 
+5. Once you find it go into this code and replace #lp-code-247 with the #id of your element. (#lp-code-247 is used twice in the code)
+6. Save the code. 
+7. Then go to https://daneden.github.io/animate.css/
+8. Find the animation you want to be applied to your element. 
+9. Then use that exact word from the site in the dropdown menu, EXACTLY, capatilization and everything EXACTLY, and replace the word "swing" in the code with your new animation (swing is used twice in the code).
+10. Then save your code and go see your element perform your animation. 
+### Add Hint Text to the Inside of the form boxes
+- ex. http://content.reverehealth.com/revere-ebook-ophthalmology/f.html
+1. Click on “Javascripts” and then click “Add”. 
+2. Name the file whatever you would like. 
+3. Paste this code into the blank file. 
+```sh
+<script type="text/javascript">
+  lp.jQuery(function($) {
+  
+    // Define your placeholder texts here, corresponding to Unbounce's field names
+    var placeholders = {
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "email": "Email"
+    };
+  
+    // Sets the HTML5 placeholders
+    for(var id in placeholders){$("#"+id).attr("placeholder",placeholders[id])}
+  
+    // Polyfill to add support for browsers like IE<=9
+    if(document.createElement("input").placeholder===undefined){$("html").attr("data-placeholder-focus","false");$.getScript("//jamesallardice.github.io/Placeholders.js/assets/js/placeholders.jquery.min.js",function(){$(function(){var e=window.module.lp.form.data.validationRules;var t=window.module.lp.form.data.validationMessages;lp.jQuery.validator.addMethod("notEqual",function(e,t,n){return this.optional(t)||$(t).attr("data-placeholder-active")!=="true"||e!==n},function(e,n){return t[$(n).attr("id")].required});for(var n in placeholders){if($("#"+n).length){if(typeof t[n].required!=="undefined"){e[n].notEqual=placeholders[n]}else{e[n]={}}}}})})}
+  
+  });
+</script>
+```
+4. Set the placement to “Before Body End Tag“
+5. Save your code. 
+6. Go to your form and jot down each Field Name ID and its corresponding title.
+7. Reopen the javascript file you just created. 
+8. Replace ‘name’: ‘Name’, ‘phone’: ‘Phone’, and ’email’: ‘Email’, with the Field Name IDs and corresponding titles you jotted down. You can find the Field ID inside the form builder on the right hand side when you click on the exact form field you want the ID for. *Make sure you always have a comma after each Field Name ID line, including the last one! If you don’t, it’ll break the code and the hint text won’t show up.*
+9. Save and close your javascript code. 
+10. Go back to your form and make sure every label with the hint text has the “Hide label” box checked. This makes it so only the hint text shows up.
+### Make your form Horizontal instead of Vertical 
+- ex. http://content.reverehealth.com/revere-ebook-ophthalmology/f.html
+1.  Click on “Javascripts” and then click “Add”. 
+2. Name the file whatever you would like. 
+3. Paste this code into the blank file. 
+```sh
+<script type="text/javascript">
+  
+  var mq = window.matchMedia('@media all and (max-width: 700px)');
+
+  
+if (screen.width > 400) {
+   $(function(){
+    var gap = 20; /* Horizontal space between fields */
+    
+    var fields = $('div.lp-pom-form-field');
+    var button = $('.lp-pom-form .lp-pom-button').eq(0);
+    var offset = fields.eq(0).width()+gap;
+    
+    for(var i=1; i<fields.length; i++){
+      fields.eq(i).css('top','0');
+      fields.eq(i).css('left',offset*i+'px');
+    }
+  });
+};
+</script>
+```
+4. To up the space in between the form fields just adjust the number 20 on this line of code to a higher or lower number. 
+```sh
+    var gap = 20; /* Horizontal space between fields */
+```
+5. From here play with the placement of the form within the Unbounce page builder, as the script will manipulate how it looks. 
+6. Also, as a note this code only works on a desktop. If you shrink your broswer on a desktop to a phone size it will look all broken and stuff. No worries though! The code looks at the actual device size. So check on an actual phone when testing how the form looks on a phone. Which should be  how it looks in the Unbounce page builder when looking at the mobile version. 
+
+### Font Awesome
