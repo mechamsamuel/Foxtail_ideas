@@ -1,4 +1,4 @@
-# Unbounce Tricks
+# Unbounce Tricks and Frequently Asked Questions
 
 None of these tricks will show up in the page builder part of Unbounce. You have to at least be in the preview screen of your site, and even then sometimes Unbounce will not read the code you have added, so to be overly safe publish the page to see these changes. 
 
@@ -94,3 +94,85 @@ width="400"
 height="250"
 ```
 15. Save the code and your problem should be fixed. 
+### List Item Bullets
+##### Change the color of the actuall bullets
+1. Click on "StyleSheets" and add a new Stylesheet. 
+2. Name it whatever you would like. 
+3. Copy and paste this code into the stylesheet. *Note: the stylesheet must be blank previous to the copy and paste or else it will throw errors.*
+```sh
+<style>
+  ul {
+    list-style: none!important;
+    padding:0;
+    margin:0;
+}
+
+ul li { 
+    list-style: none!important;
+    padding-left: 1em; 
+    text-indent: -.7em;
+}
+
+ul li:before {
+    content: "• ";
+    color: #fff; /* or whatever color you prefer */
+}
+</style>
+```
+4. This exact code will turn the bullets white. However where it says "/* or whatever color you prefer */" just change the #fff to whatever the hexidecimal number is you want the color to be. 
+5. Save the code and that it it. 
+##### Put the bullets on the right hand side of a right aligned list
+1. Click on Stylesheets and add a new Stylesheet
+2. Name it whatever you would like.
+3. Copy and paste this code into the stylesheet. *Note: the stylesheet must be blank previous to the copy and paste or else it will throw errors.*
+```sh
+<style>
+  ul {
+    direction: rtl!important;
+  }
+</style>
+```
+
+### Google Fonts
+Clients sometimes ask for fonts that Unbounce does not have. Well Do not fear Google is here.
+1. Go to https://www.google.com/fonts
+2. Find the font that you want on your Unbounce page.
+3. Click on the blue "Add to Collection" button for that font. 
+4. A grey box will appear at the bottom of your screen. Click the "Use" button in the right hand corner of this grey box. 
+5. It will take you to another screen. Scroll to the bottom of this screen. 
+6. Where it says "Add this code to your website:" copy that line of code it provides. 
+7. Now go back to unbounce. 
+8. Create a new stylesheet and name it whatever you would like. 
+9. Add this line of code you just coppied to this sytlesheet. Just this line and nothing else!!! It will probably say the stylesheet is invalid and give you an error. Well ignore this, Unbounce it dumb sometimes. 
+10. Now you have 2 options. Proceed to the option you want to take. 
+##### Add this font to all the text on the page!
+1. Go back to google where it gave you the last piece of code. 
+2. Now where it says "Integrate the fonts into your CSS:" copy that bit of code it provides you. 
+3. Add a new sytlesheet once again and name it whatever you want. 
+4. Add this code to the blank stylesheet. 
+```sh
+<style>
+  p, h1, h2, h3, h4, h5, h6, span{
+      font-family: 'Raleway', sans-serif!important;
+  }
+</style>
+```
+5. Replace "font-family: 'Raleway', sans-serif" with the line of code Google last provided you. However make sure to leave the "!important" at the end with no space inbetween the start of it and the end of your code. NO SPACE!!!!
+6. Save your code and BAM!
+##### You just want this new font for one piece of text. 
+1. Click on the text you want to change the font of. 
+2. Click on the Source. 
+3. Take the line of code google gave to you and combine it with 
+```sh
+style="font-family: YourFont!important"
+```
+So it should look something like this
+```sh
+style="font-family: 'Raleway', sans-serif!important;"
+```
+4. Then take this new formed piece of code and add it within the p, h1, h2, h3, h4, h5, h6, or span tag. *This one isn't as straight forward, so don't hesitate to call me over for help*
+Ex. 
+```sh
+<p style="font-family: 'Raleway', sans-serif!important;" class="lplh-58">Hello World</p>
+```
+
