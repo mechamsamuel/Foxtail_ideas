@@ -51,3 +51,46 @@ This is a frequently asked question. How to take away the underline of a link yo
 ```sh
 <a style="text-decoration: none!important;" href="tel:1-508-203-6971"><span style="color:#00a8ca;"><span style="font-size:36px;">508-556-1261</span></span></a>
 ```
+
+### Make a phone number clickable, to make the call
+*Note:* If you have a phone number on a landing page you should always do this! It raises conversions by 80% some articles claim. Don't quote me on that fact, that is off the top of my head. 
+
+1. Click on the text where the phone number is at. 
+2. Highlihgt the phone number within the text editor and click the link icon (It is the globe with the linked pieces of chain). 
+3. Once the pop up window come up change the protocol to "tel:". 
+4. Then simply put the phone number where a link usually goes. However it must be in this format!!!
+```sh
+541-680-5840
+```
+5. Also for international calling I always add the one in from of the number just to be safe. 
+```sh
+1-541-680-5840
+```
+6. Then simply click the "Okay" button and you have linked your phone number! 
+
+### Add an Interactive Google Map
+
+1. Go to https://www.google.com/maps
+2. Enter in the address you would like the map to use. 
+3. Once it has found the address click on the "Share" button
+4. Once the window come up to share switch the the "Embed Map" section. 
+5. Copy the Iframe code it provides you. 
+6. Now go back to Unbounce. 
+7. Drag a custom HTML box onto your page. 
+8. In the window it pops up, paste the Iframe code you copied from Google. 
+9. Hit save code. 
+10. *If a problem occurs and the map does not initially show your location.*
+11. Find the exact width and height of your custom HTML box. 
+12. Go into the iframe code in the custom HTML box. 
+13. Towards the end of the Iframe you will see 
+```sh
+width="600"
+height="450"
+```
+14. Change these numbers to the exact width and height of your custom HTML box
+ex. 
+```sh
+width="400"
+height="250"
+```
+15. Save the code and your problem should be fixed. 
