@@ -1,5 +1,6 @@
 # Unbounce Tricks and Frequently Asked Questions
 *By Samuel Mecham, Foxtail Marketing*
+**Based off of Internet Searching, and prior knowledge...hope that covers me legally.**
 
 None of these tricks will show up in the page builder part of Unbounce. You have to at least be in the preview screen of your site, and even then sometimes Unbounce will not read the code you have added, so to be overly safe publish the page to see these changes. 
 
