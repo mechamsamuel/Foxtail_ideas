@@ -1,4 +1,5 @@
 # Unbounce Tricks and Frequently Asked Questions
+##By Samuel Mecham, Foxtail Marketing
 
 None of these tricks will show up in the page builder part of Unbounce. You have to at least be in the preview screen of your site, and even then sometimes Unbounce will not read the code you have added, so to be overly safe publish the page to see these changes. 
 
@@ -268,4 +269,8 @@ if (screen.width > 400) {
 5. From here play with the placement of the form within the Unbounce page builder, as the script will manipulate how it looks. 
 6. Also, as a note this code only works on a desktop. If you shrink your broswer on a desktop to a phone size it will look all broken and stuff. No worries though! The code looks at the actual device size. So check on an actual phone when testing how the form looks on a phone. Which should be  how it looks in the Unbounce page builder when looking at the mobile version. 
 
-### Font Awesome
+#### Final Notes
+
+Once Again: 
+*None of these tricks will show up in the page builder part of Unbounce. You have to at least be in the preview screen of your site, and even then sometimes Unbounce will not read the code you have added, so to be overly safe publish the page to see these changes.*
+>If you run into any problems at all I am always happy to come help! Even the smallest questions will never bother me, so don't hesitate. 
