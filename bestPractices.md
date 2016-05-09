@@ -1,25 +1,31 @@
 # Landing Page Best Practices
 
 ### Banner Image
+
 ##### Image/Video
+
 ##### Tagline
 - Title needs to pop and stand out (differentiate important words by bolding and changing colors) 
 - Include catchy tagline under title if you see appropriate 
 - Try to use a question
 - Use pain points in title
+
 ##### CTA
 For all CTA colors, if the client does not already have a bright CTA color on their site you can use https://color.adobe.com/create/color-wheel/ to help find one. I like to use the "Complementary" "Color Rule". You can use one of your client's site color as one of the colors in the color wheel, then use a bright complementary color from the Adobe Color Wheel as your CTA. 
+
 ###### Form 
 - Find out what information client would like to receive from form
 - We reccomend First Name, Last Name, Email, Phone Number
 - Make submit button a bright color that is easily visible and different from any other color used above the fold. 
 - Make sure to style the thank you pop up, or redirect to another thank you page.
 - Make sure to make certain fields required. 
+
 ###### Phone Number
 - Format (xxx) xxx-xxxx for viewable phone number (*Note: don't confuse with format of link for phone number)
 - Make sure phone number is clickable : See https://github.com/mechamsamuel/Foxtail_ideas/blob/master/unbouncetricks.md
 - Make phone a bright color that is easily visible and different from any other color used above the fold. 
 - Tell people what you want them to do. Ex. Call Now! (541) 680 - 5840
+
 ###### Button
 - a bright color that is easily visible and different from any other color used above the fold.
 
