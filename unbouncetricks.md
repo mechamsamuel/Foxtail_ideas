@@ -5,8 +5,6 @@ None of these tricks will show up in the page builder part of Unbounce. You have
 
 ### Sticky Header
 
-  - Ex. http://www.liceclinicsmedway.com/immediate-contact2/
-
 1. Click on Javascript, then click Add. Name this file whatever you would like to. 
 2. Paste this code in the new file you just created
 ```sh
@@ -179,7 +177,6 @@ style="font-family: 'Raleway', sans-serif!important;"
 ```
 
 ### Animate a CTA to bring more attention to it
-- ex. http://content.reverehealth.com/brandon-hall/
 1. Click on “Javascripts” and then click “Add”. 
 2. Name the file whatever you would like. 
 3. Paste this code into the blank file.
@@ -205,7 +202,6 @@ var effectClass = "animated " + "swing";
 9. Then use that exact word from the site in the dropdown menu, EXACTLY, capatilization and everything EXACTLY, and replace the word "swing" in the code with your new animation (swing is used twice in the code).
 10. Then save your code and go see your element perform your animation. 
 ### Add Hint Text to the Inside of the form boxes
-- ex. http://content.reverehealth.com/revere-ebook-ophthalmology/f.html
 1. Click on “Javascripts” and then click “Add”. 
 2. Name the file whatever you would like. 
 3. Paste this code into the blank file. 
@@ -237,7 +233,6 @@ var effectClass = "animated " + "swing";
 9. Save and close your javascript code. 
 10. Go back to your form and make sure every label with the hint text has the “Hide label” box checked. This makes it so only the hint text shows up.
 ### Make your form Horizontal instead of Vertical 
-- ex. http://content.reverehealth.com/revere-ebook-ophthalmology/f.html
 1.  Click on “Javascripts” and then click “Add”. 
 2. Name the file whatever you would like. 
 3. Paste this code into the blank file. 
