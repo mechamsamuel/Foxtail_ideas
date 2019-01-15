@@ -45,7 +45,7 @@ This is a frequently asked question. How to take away the underline of a link yo
 ```
 4. Click the blue button to save code and all underlines will be gone. 
 
-##### Take one underline on page - Maybe a linked phone number ect. 
+##### Take away one underline on the page - Maybe a linked phone number ect. 
 1. Click on the text that is underlined. 
 2. Click on the source so you see all the raw code. 
 3. Go into the <a> tag and add style="text-decoration: none!important;"
