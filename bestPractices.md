@@ -24,7 +24,7 @@ For all CTA colors, if the client does not already have a bright CTA color on th
 - Format (xxx) xxx-xxxx for viewable phone number (*Note: don't confuse with format of link for phone number)
 - Make sure phone number is clickable : See https://github.com/mechamsamuel/Foxtail_ideas/blob/master/unbouncetricks.md
 - Make phone a bright color that is easily visible and different from any other color used above the fold. 
-- Tell people what you want them to do. Ex. Call Now! (541) 680 - 5840
+- Tell people what you want them to do. Ex. Call Now! (555) 555 - 5555
 
 ###### Button
 - a bright color that is easily visible and different from any other color used above the fold.
